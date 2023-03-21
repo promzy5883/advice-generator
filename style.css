@@ -72,9 +72,6 @@ body {
 .load {
   animation: rotate 1s infinite linear;
 }
-.dice-box:hover {
-  box-shadow: 0px 0px 12px hsl(150, 100%, 66%);
-}
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -86,5 +83,10 @@ body {
 @media (max-width: 500px) {
   .advice-box {
     width: 340px;
+  }
+}
+@media (min-width: 501px) {
+  .dice-box:hover {
+    box-shadow: 0px 0px 12px hsl(150, 100%, 66%);
   }
 }
