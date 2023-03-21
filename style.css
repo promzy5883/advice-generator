@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Outfit&display=swap");
+/* font-family: 'EB Garamond', serif;
+font-family: 'Outfit', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(218, 23%, 16%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 40px 0 20px 0;
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  color: hsl(193, 38%, 86%);
+  letter-spacing: 1px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.advice-box {
+  width: 375px;
+  box-sizing: border-box;
+  padding: 18px 18px 0px 18px;
+  background-color: hsl(217, 19%, 24%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+}
+.advice-id {
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  color: hsl(150, 100%, 66%);
+  font-size: 12px;
+  letter-spacing: 3px;
+  padding-bottom: 18px;
+}
+.advice-text {
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-family: "Outfit", sans-serif;
+  color: hsl(193, 38%, 86%);
+  font-size: 21px;
+  padding-bottom: 18px;
+}
+.dice-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  align-self: center;
+  transform: translateY(50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.dice-box img {
+  width: 40%;
+  height: 40%;
+}
+.load {
+  animation: rotate 1s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 500px) {
+  .advice-box {
+    width: 340px;
+  }
+}
